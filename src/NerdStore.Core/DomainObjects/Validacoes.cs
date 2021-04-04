@@ -16,12 +16,6 @@ namespace NerdStore.Core.DomainObjects
             }
         }
 
-        public static void ValidarSeMenorIgualMinimo(decimal valor1, decimal valor2, string mensagem)
-        {
-            if (valor1 <= valor2)
-                throw new DomainException(mensagem);
-        }
-
         public static void ValidarSeDiferente(object object1, object object2, string mensagem)
         {
             if (!object1.Equals(object2))
